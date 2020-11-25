@@ -16,6 +16,7 @@ com\accenture\training\dto\UserTO.class
 com\accenture\training\MyApplication.class
 com\accenture\training\repository\SalesOrderRepository.class
 com\accenture\training\repository\ClientsRepository.class
+com\accenture\training\config\SpringSecurityConfig.class
 com\accenture\training\service\ClientsService.class
 com\accenture\training\controller\SalesOrderController.class
 com\accenture\training\controller\ProductsController.class

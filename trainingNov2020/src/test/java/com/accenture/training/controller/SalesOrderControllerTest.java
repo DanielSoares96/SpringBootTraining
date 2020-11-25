@@ -51,7 +51,7 @@ public class SalesOrderControllerTest {
 		SalesOrderTO salesOrderTO = new SalesOrderTO();
 		List<SalesOrderItemTO> items = new ArrayList<SalesOrderItemTO>();
 		SalesOrderItemTO salesOrderItems = new SalesOrderItemTO();
-		salesOrderItems.setProductId("200dsds");
+		salesOrderItems.setQuantity(40);
 		items.add(salesOrderItems);
 		salesOrderTO.setStatus("N");
 		salesOrderTO.setCreatedBy("Test Name");

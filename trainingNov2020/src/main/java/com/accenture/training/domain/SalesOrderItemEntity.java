@@ -1,7 +1,6 @@
 package com.accenture.training.domain;
 
-import java.sql.Date;
-import java.sql.Time;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,60 +14,53 @@ import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 @Table(name = "\"TRAINING_SALESORDER_TBLSALESORDERITEM\"")
-public class SalesOrderItemEntity{
+public class SalesOrderItemEntity {
 
 	@Id
 	@Column(name = "\"ID\"")
 	@GeneratedValue(generator = "uuid")
 	@GenericGenerator(name = "uuid", strategy = "org.hibernate.id.UUIDGenerator")
-	private String salesOrderId;
+	private String id;
 	
-	@Column(name = "\"PRODUCT_ID\"")
-	private String productId;
+	@Column(name = "\"STATUS\"")
+	private String status;
+
+	
+	@ManyToOne
+    @JoinColumn(name = "\"SALESORDER_ID\"")
+	private SalesOrderEntity salesOrder;
+	
 	
 	@Column(name = "\"CREATEDAT\"")
-	private Date createdAT;
+	private LocalDateTime createdAt;
+
 	
 	@Column(name = "\"CREATEDBY\"")
-	private Date createdBY;
+	private String createdBy;
 	
 	@Column(name = "\"MODIFIEDAT\"")
-	private Time modifiedAT;
+	private LocalDateTime modifiedAt;
 	
 	@Column(name = "\"MODIFIEDBY\"")
-	private Time modifiedBY;
+	private String modifiedBy;
 	
-	public Date getCreatedAT() {
-		return createdAT;
+	public String getId() {
+		return id;
+	}
+	
+	public void setId(String id) {
+		this.id = id;
+	}
+	
+	public String getStatus() {
+		return status;
 	}
 
-	public void setCreatedAT(Date createdAT) {
-		this.createdAT = createdAT;
+	public void setStatus(String status) {
+		this.status = status;
 	}
-
-	public Date getCreatedBY() {
-		return createdBY;
-	}
-
-	public void setCreatedBY(Date createdBY) {
-		this.createdBY = createdBY;
-	}
-
-	public Time getModifiedAT() {
-		return modifiedAT;
-	}
-
-	public void setModifiedAT(Time modifiedAT) {
-		this.modifiedAT = modifiedAT;
-	}
-
-	public Time getModifiedBY() {
-		return modifiedBY;
-	}
-
-	public void setModifiedBY(Time modifiedBY) {
-		this.modifiedBY = modifiedBY;
-	}
+	
+	
 
 	public SalesOrderEntity getSalesOrder() {
 		return salesOrder;
@@ -77,26 +69,46 @@ public class SalesOrderItemEntity{
 	public void setSalesOrder(SalesOrderEntity salesOrder) {
 		this.salesOrder = salesOrder;
 	}
-
-	@ManyToOne
-	@JoinColumn(name = "\"SALESORDER_ID\"")
-	private SalesOrderEntity salesOrder;
-	
-	public String getSalesOrderId() {
-		return salesOrderId;
+		
+	public LocalDateTime getCreatedAt() {
+		return createdAt;
 	}
 
-	public void setSalesOrderId(String salesOrderId) {
-		this.salesOrderId = salesOrderId;
-	}
-
-	public String getProductId() {
-		return productId;
-	}
-
-	public void setProductId(String productId) {
-		this.productId = productId;
+	public void setCreatedAt(LocalDateTime createdAt) {
+		this.createdAt = createdAt;
 	}
 	
 	
+	
+	public String getCreatedBy() {
+		return createdBy;
+	}
+
+	public void setCreatedBy(String createdBy) {
+		this.createdBy = createdBy;
+	}
+
+	
+	
+
+	public LocalDateTime getModifiedAt() {
+		return modifiedAt;
+	}
+
+	public void setModifiedAt(LocalDateTime modifiedAt) {
+		this.modifiedAt = modifiedAt;
+	}
+	
+	
+
+
+	public String getModifiedBy() {
+		return modifiedBy;
+	}
+
+	public void setModifiedBy(String modifiedBy) {
+		this.modifiedBy = modifiedBy;
+	}
+
+
 }
