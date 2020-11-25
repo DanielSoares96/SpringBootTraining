@@ -1,0 +1,54 @@
+-------------------------------------------------------------------------------
+Test set: com.accenture.training.controller.SalesOrderControllerTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 4, Skipped: 0, Time elapsed: 1.498 sec <<< FAILURE! - in com.accenture.training.controller.SalesOrderControllerTest
+aa_saveSalesOrder(com.accenture.training.controller.SalesOrderControllerTest)  Time elapsed: 0.117 sec  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [insert into "TRAINING_SALESORDER_TBLSALESORDER" ("CREATEDBY", "CREATIONDATE", "STATUS", "ID") values (?, ?, ?, ?)]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.aa_saveSalesOrder(SalesOrderControllerTest.java:75)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [insert into "TRAINING_SALESORDER_TBLSALESORDER" ("CREATEDBY", "CREATIONDATE", "STATUS", "ID") values (?, ?, ?, ?)]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.aa_saveSalesOrder(SalesOrderControllerTest.java:75)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.aa_saveSalesOrder(SalesOrderControllerTest.java:75)
+Caused by: com.sap.db.jdbc.exceptions.JDBCDriverException: SAP DBTech JDBC: [260]: invalid column name: CREATIONDATE
+	at com.accenture.training.controller.SalesOrderControllerTest.aa_saveSalesOrder(SalesOrderControllerTest.java:75)
+
+ab_changeSalesOrder(com.accenture.training.controller.SalesOrderControllerTest)  Time elapsed: 0.061 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+Expecting:
+ <null>
+to be equal to:
+ <"Produto Teste Alterado">
+but was not.
+	at com.accenture.training.controller.SalesOrderControllerTest.ab_changeSalesOrder(SalesOrderControllerTest.java:107)
+
+ac_getAllSalesOrder(com.accenture.training.controller.SalesOrderControllerTest)  Time elapsed: 0.236 sec  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select salesorder0_."ID" as id1_3_, salesorder0_."CREATEDBY" as createdby2_3_, salesorder0_."CREATIONDATE" as creationdate3_3_, salesorder0_."STATUS" as status4_3_ from "TRAINING_SALESORDER_TBLSALESORDER" salesorder0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.ac_getAllSalesOrder(SalesOrderControllerTest.java:119)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select salesorder0_."ID" as id1_3_, salesorder0_."CREATEDBY" as createdby2_3_, salesorder0_."CREATIONDATE" as creationdate3_3_, salesorder0_."STATUS" as status4_3_ from "TRAINING_SALESORDER_TBLSALESORDER" salesorder0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.ac_getAllSalesOrder(SalesOrderControllerTest.java:119)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.ac_getAllSalesOrder(SalesOrderControllerTest.java:119)
+Caused by: com.sap.db.jdbc.exceptions.JDBCDriverException: SAP DBTech JDBC: [260]: invalid column name: SALESORDER0_.CREATIONDATE: line 1 col 80 (at pos 79)
+	at com.accenture.training.controller.SalesOrderControllerTest.ac_getAllSalesOrder(SalesOrderControllerTest.java:119)
+
+ad_getOneSalesOrder(com.accenture.training.controller.SalesOrderControllerTest)  Time elapsed: 0.566 sec  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select salesorder0_."ID" as id1_3_0_, salesorder0_."CREATEDBY" as createdby2_3_0_, salesorder0_."CREATIONDATE" as creationdate3_3_0_, salesorder0_."STATUS" as status4_3_0_ from "TRAINING_SALESORDER_TBLSALESORDER" salesorder0_ where salesorder0_."ID"=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.ad_getOneSalesOrder(SalesOrderControllerTest.java:138)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select salesorder0_."ID" as id1_3_0_, salesorder0_."CREATEDBY" as createdby2_3_0_, salesorder0_."CREATIONDATE" as creationdate3_3_0_, salesorder0_."STATUS" as status4_3_0_ from "TRAINING_SALESORDER_TBLSALESORDER" salesorder0_ where salesorder0_."ID"=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.ad_getOneSalesOrder(SalesOrderControllerTest.java:138)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.ad_getOneSalesOrder(SalesOrderControllerTest.java:138)
+Caused by: com.sap.db.jdbc.exceptions.JDBCDriverException: SAP DBTech JDBC: [260]: invalid column name: SALESORDER0_.CREATIONDATE: line 1 col 84 (at pos 83)
+	at com.accenture.training.controller.SalesOrderControllerTest.ad_getOneSalesOrder(SalesOrderControllerTest.java:138)
+
+az_deleteSalesOrder(com.accenture.training.controller.SalesOrderControllerTest)  Time elapsed: 0.458 sec  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select salesorder0_."ID" as id1_3_0_, salesorder0_."CREATEDBY" as createdby2_3_0_, salesorder0_."CREATIONDATE" as creationdate3_3_0_, salesorder0_."STATUS" as status4_3_0_ from "TRAINING_SALESORDER_TBLSALESORDER" salesorder0_ where salesorder0_."ID"=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.az_deleteSalesOrder(SalesOrderControllerTest.java:155)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select salesorder0_."ID" as id1_3_0_, salesorder0_."CREATEDBY" as createdby2_3_0_, salesorder0_."CREATIONDATE" as creationdate3_3_0_, salesorder0_."STATUS" as status4_3_0_ from "TRAINING_SALESORDER_TBLSALESORDER" salesorder0_ where salesorder0_."ID"=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.az_deleteSalesOrder(SalesOrderControllerTest.java:155)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.az_deleteSalesOrder(SalesOrderControllerTest.java:155)
+Caused by: com.sap.db.jdbc.exceptions.JDBCDriverException: SAP DBTech JDBC: [260]: invalid column name: SALESORDER0_.CREATIONDATE: line 1 col 84 (at pos 83)
+	at com.accenture.training.controller.SalesOrderControllerTest.az_deleteSalesOrder(SalesOrderControllerTest.java:155)
+

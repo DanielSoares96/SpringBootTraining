@@ -1,3 +1,4 @@
-com\accenture\training\controller\ProductControllerTest.class
 com\accenture\training\controller\ClientsControllerTest.class
 com\accenture\training\controller\UserControllerTest.class
+com\accenture\training\controller\ProductControllerTest.class
+com\accenture\training\controller\SalesOrderControllerTest.class

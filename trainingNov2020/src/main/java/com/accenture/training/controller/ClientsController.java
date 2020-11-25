@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.accenture.training.dto.ClientsTO;
-import com.accenture.training.dto.ProductsTO;
 import com.accenture.training.service.ClientsService;
 
 @RestController

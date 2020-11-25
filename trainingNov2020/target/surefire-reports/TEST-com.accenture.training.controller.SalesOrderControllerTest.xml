@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.accenture.training.controller.SalesOrderControllerTest" time="1.498" tests="5" errors="4" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
+    <property name="java.vm.version" value="25.201-b09"/>
+    <property name="user.country.format" value="PT"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\d.a.soares\Desktop\trainingNov2020"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\d.a.soares\Desktop\trainingNov2020"/>
+    <property name="java.runtime.version" value="1.8.0_201-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\DA2261~1.SOA\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\d.a.soares\Documents\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Users\d.a.soares\Documents\apache-maven-3.6.3\bin;C:\Users\d.a.soares\AppData\Local\Microsoft\WindowsApps;C:\Users\d.a.soares\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\d.a.soares\AppData\Roaming\npm;C:\Users\d.a.soares\AppData\Local\GitHubDesktop\bin;C:\Users\d.a.soares\Documents\eclipse;;."/>
+    <property name="maven.conf" value="C:\Users\d.a.soares\Documents\apache-maven-3.6.3\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Users\d.a.soares\Documents\apache-maven-3.6.3\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\d.a.soares"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="d.a.soares"/>
+    <property name="java.class.path" value="C:\Users\d.a.soares\Documents\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="user.language.format" value="pt"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_201"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp850"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\d.a.soares\Documents\apache-maven-3.6.3\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp850"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="aa_saveSalesOrder" classname="com.accenture.training.controller.SalesOrderControllerTest" time="0.117">
+    <error message="Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [insert into &quot;TRAINING_SALESORDER_TBLSALESORDER&quot; (&quot;CREATEDBY&quot;, &quot;CREATIONDATE&quot;, &quot;STATUS&quot;, &quot;ID&quot;) values (?, ?, ?, ?)]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement" type="org.springframework.web.util.NestedServletException">org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [insert into "TRAINING_SALESORDER_TBLSALESORDER" ("CREATEDBY", "CREATIONDATE", "STATUS", "ID") values (?, ?, ?, ?)]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.aa_saveSalesOrder(SalesOrderControllerTest.java:75)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [insert into "TRAINING_SALESORDER_TBLSALESORDER" ("CREATEDBY", "CREATIONDATE", "STATUS", "ID") values (?, ?, ?, ?)]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.aa_saveSalesOrder(SalesOrderControllerTest.java:75)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.aa_saveSalesOrder(SalesOrderControllerTest.java:75)
+Caused by: com.sap.db.jdbc.exceptions.JDBCDriverException: SAP DBTech JDBC: [260]: invalid column name: CREATIONDATE
+	at com.accenture.training.controller.SalesOrderControllerTest.aa_saveSalesOrder(SalesOrderControllerTest.java:75)
+</error>
+    <system-out><![CDATA[2020-11-25 11:31:37.782  INFO 5256 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.accenture.training.controller.SalesOrderControllerTest], using SpringBootContextLoader
+2020-11-25 11:31:37.783  INFO 5256 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.accenture.training.controller.SalesOrderControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-11-25 11:31:37.784  INFO 5256 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.accenture.training.controller.SalesOrderControllerTest]: SalesOrderControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-11-25 11:31:37.785  INFO 5256 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.accenture.training.MyApplication for test class com.accenture.training.controller.SalesOrderControllerTest
+2020-11-25 11:31:37.786  INFO 5256 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-11-25 11:31:37.786  INFO 5256 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@21be14c2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@19105a87, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@83b0d0f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2bb717d7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7afe0e67, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6121a7dd, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@31228d83, org.springframework.test.context.event.EventPublishingTestExecutionListener@22b82ddf, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@28bf82d9, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@44ccd75c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@61a704d3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2120bed, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@566fe83c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@743bb39a]
+2020-11-25 11:31:37.791 TRACE 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.a.t.c.SalesOrderController:
+	{GET [/SalesOrder]}: findAll(String,boolean)
+	{DELETE [/SalesOrder/{salesOrderId}]}: deleteProduct(String)
+	{GET [/SalesOrder/{salesOrderId}]}: FindOne(String)
+	{PUT [/SalesOrder/{salesOrderId}]}: updateProduct(String,SalesOrderTO)
+	{POST [/SalesOrder]}: createProduct(SalesOrderTO)
+2020-11-25 11:31:37.791 DEBUG 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in <unknown>
+2020-11-25 11:31:37.793 DEBUG 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-11-25 11:31:37.795 DEBUG 5256 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-11-25 11:31:37.795  INFO 5256 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-11-25 11:31:37.795  INFO 5256 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-11-25 11:31:37.795  INFO 5256 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2020-11-25 11:31:37.797 TRACE 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.accenture.training.controller.SalesOrderController#createProduct(SalesOrderTO)
+2020-11-25 11:31:37.801 TRACE 5256 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.accenture.training.dto.SalesOrderTO@25a290ee]
+2020-11-25 11:31:37.801 TRACE 5256 --- [           main] o.s.web.method.HandlerMethod             : Arguments: [com.accenture.training.dto.SalesOrderTO@25a290ee]
+2020-11-25 11:31:37.863  WARN 5256 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 260, SQLState: HY000
+2020-11-25 11:31:37.864 ERROR 5256 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SAP DBTech JDBC: [260]: invalid column name: CREATIONDATE
+]]></system-out>
+  </testcase>
+  <testcase name="ab_changeSalesOrder" classname="com.accenture.training.controller.SalesOrderControllerTest" time="0.061">
+    <failure message="&#10;Expecting:&#10; &lt;null&gt;&#10;to be equal to:&#10; &lt;&quot;Produto Teste Alterado&quot;&gt;&#10;but was not." type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+
+Expecting:
+ <null>
+to be equal to:
+ <"Produto Teste Alterado">
+but was not.
+	at com.accenture.training.controller.SalesOrderControllerTest.ab_changeSalesOrder(SalesOrderControllerTest.java:107)
+]]></failure>
+    <system-out><![CDATA[2020-11-25 11:31:37.990 TRACE 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.a.t.c.SalesOrderController:
+	{GET [/SalesOrder]}: findAll(String,boolean)
+	{DELETE [/SalesOrder/{salesOrderId}]}: deleteProduct(String)
+	{GET [/SalesOrder/{salesOrderId}]}: FindOne(String)
+	{PUT [/SalesOrder/{salesOrderId}]}: updateProduct(String,SalesOrderTO)
+	{POST [/SalesOrder]}: createProduct(SalesOrderTO)
+2020-11-25 11:31:37.990 DEBUG 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in <unknown>
+2020-11-25 11:31:37.994 DEBUG 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-11-25 11:31:37.996 DEBUG 5256 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-11-25 11:31:37.996  INFO 5256 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-11-25 11:31:37.996  INFO 5256 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-11-25 11:31:37.996  INFO 5256 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2020-11-25 11:31:37.997 TRACE 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.accenture.training.controller.SalesOrderController#updateProduct(String, SalesOrderTO)
+2020-11-25 11:31:37.999 TRACE 5256 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.accenture.training.dto.SalesOrderTO@356b6b5d]
+2020-11-25 11:31:37.999 TRACE 5256 --- [           main] o.s.web.method.HandlerMethod             : Arguments: [null, com.accenture.training.dto.SalesOrderTO@356b6b5d]
+2020-11-25 11:31:37.999 DEBUG 5256 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2020-11-25 11:31:37.999 TRACE 5256 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.accenture.training.dto.SalesOrderTO@37b1149b]
+2020-11-25 11:31:37.999 TRACE 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /SalesOrder/null
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Accept:"application/json", Content-Length:"134"]
+             Body = {"id":null,"creationDate":null,"createdBy":"Produto Teste Alterado","status":"N","salesOrderItems":null,"userId":null,"clientId":null}
+    Session Attrs = {}
+
+Handler:
+             Type = com.accenture.training.controller.SalesOrderController
+           Method = com.accenture.training.controller.SalesOrderController#updateProduct(String, SalesOrderTO)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":null,"creationDate":null,"createdBy":null,"status":null,"salesOrderItems":null,"userId":null,"clientId":null}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="ac_getAllSalesOrder" classname="com.accenture.training.controller.SalesOrderControllerTest" time="0.236">
+    <error message="Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select salesorder0_.&quot;ID&quot; as id1_3_, salesorder0_.&quot;CREATEDBY&quot; as createdby2_3_, salesorder0_.&quot;CREATIONDATE&quot; as creationdate3_3_, salesorder0_.&quot;STATUS&quot; as status4_3_ from &quot;TRAINING_SALESORDER_TBLSALESORDER&quot; salesorder0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement" type="org.springframework.web.util.NestedServletException">org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select salesorder0_."ID" as id1_3_, salesorder0_."CREATEDBY" as createdby2_3_, salesorder0_."CREATIONDATE" as creationdate3_3_, salesorder0_."STATUS" as status4_3_ from "TRAINING_SALESORDER_TBLSALESORDER" salesorder0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.ac_getAllSalesOrder(SalesOrderControllerTest.java:119)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select salesorder0_."ID" as id1_3_, salesorder0_."CREATEDBY" as createdby2_3_, salesorder0_."CREATIONDATE" as creationdate3_3_, salesorder0_."STATUS" as status4_3_ from "TRAINING_SALESORDER_TBLSALESORDER" salesorder0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.ac_getAllSalesOrder(SalesOrderControllerTest.java:119)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.ac_getAllSalesOrder(SalesOrderControllerTest.java:119)
+Caused by: com.sap.db.jdbc.exceptions.JDBCDriverException: SAP DBTech JDBC: [260]: invalid column name: SALESORDER0_.CREATIONDATE: line 1 col 80 (at pos 79)
+	at com.accenture.training.controller.SalesOrderControllerTest.ac_getAllSalesOrder(SalesOrderControllerTest.java:119)
+</error>
+    <system-out><![CDATA[2020-11-25 11:31:38.014 TRACE 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.a.t.c.SalesOrderController:
+	{GET [/SalesOrder]}: findAll(String,boolean)
+	{DELETE [/SalesOrder/{salesOrderId}]}: deleteProduct(String)
+	{GET [/SalesOrder/{salesOrderId}]}: FindOne(String)
+	{PUT [/SalesOrder/{salesOrderId}]}: updateProduct(String,SalesOrderTO)
+	{POST [/SalesOrder]}: createProduct(SalesOrderTO)
+2020-11-25 11:31:38.015 DEBUG 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in <unknown>
+2020-11-25 11:31:38.018 DEBUG 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-11-25 11:31:38.020 DEBUG 5256 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-11-25 11:31:38.020  INFO 5256 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-11-25 11:31:38.020  INFO 5256 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-11-25 11:31:38.020  INFO 5256 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2020-11-25 11:31:38.020 TRACE 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.accenture.training.controller.SalesOrderController#findAll(String, boolean)
+2020-11-25 11:31:38.021 TRACE 5256 --- [           main] o.s.web.method.HandlerMethod             : Arguments: [null, false]
+2020-11-25 11:31:38.127  WARN 5256 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 260, SQLState: HY000
+2020-11-25 11:31:38.127 ERROR 5256 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SAP DBTech JDBC: [260]: invalid column name: SALESORDER0_.CREATIONDATE: line 1 col 80 (at pos 79)
+]]></system-out>
+  </testcase>
+  <testcase name="ad_getOneSalesOrder" classname="com.accenture.training.controller.SalesOrderControllerTest" time="0.566">
+    <error message="Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select salesorder0_.&quot;ID&quot; as id1_3_0_, salesorder0_.&quot;CREATEDBY&quot; as createdby2_3_0_, salesorder0_.&quot;CREATIONDATE&quot; as creationdate3_3_0_, salesorder0_.&quot;STATUS&quot; as status4_3_0_ from &quot;TRAINING_SALESORDER_TBLSALESORDER&quot; salesorder0_ where salesorder0_.&quot;ID&quot;=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement" type="org.springframework.web.util.NestedServletException">org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select salesorder0_."ID" as id1_3_0_, salesorder0_."CREATEDBY" as createdby2_3_0_, salesorder0_."CREATIONDATE" as creationdate3_3_0_, salesorder0_."STATUS" as status4_3_0_ from "TRAINING_SALESORDER_TBLSALESORDER" salesorder0_ where salesorder0_."ID"=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.ad_getOneSalesOrder(SalesOrderControllerTest.java:138)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select salesorder0_."ID" as id1_3_0_, salesorder0_."CREATEDBY" as createdby2_3_0_, salesorder0_."CREATIONDATE" as creationdate3_3_0_, salesorder0_."STATUS" as status4_3_0_ from "TRAINING_SALESORDER_TBLSALESORDER" salesorder0_ where salesorder0_."ID"=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.ad_getOneSalesOrder(SalesOrderControllerTest.java:138)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.ad_getOneSalesOrder(SalesOrderControllerTest.java:138)
+Caused by: com.sap.db.jdbc.exceptions.JDBCDriverException: SAP DBTech JDBC: [260]: invalid column name: SALESORDER0_.CREATIONDATE: line 1 col 84 (at pos 83)
+	at com.accenture.training.controller.SalesOrderControllerTest.ad_getOneSalesOrder(SalesOrderControllerTest.java:138)
+</error>
+    <system-out><![CDATA[2020-11-25 11:31:38.287 TRACE 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.a.t.c.SalesOrderController:
+	{GET [/SalesOrder]}: findAll(String,boolean)
+	{DELETE [/SalesOrder/{salesOrderId}]}: deleteProduct(String)
+	{GET [/SalesOrder/{salesOrderId}]}: FindOne(String)
+	{PUT [/SalesOrder/{salesOrderId}]}: updateProduct(String,SalesOrderTO)
+	{POST [/SalesOrder]}: createProduct(SalesOrderTO)
+2020-11-25 11:31:38.287 DEBUG 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in <unknown>
+2020-11-25 11:31:38.291 DEBUG 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-11-25 11:31:38.292 DEBUG 5256 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-11-25 11:31:38.293  INFO 5256 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-11-25 11:31:38.293  INFO 5256 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-11-25 11:31:38.293  INFO 5256 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2020-11-25 11:31:38.293 TRACE 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.accenture.training.controller.SalesOrderController#FindOne(String)
+2020-11-25 11:31:38.294 TRACE 5256 --- [           main] o.s.web.method.HandlerMethod             : Arguments: [null]
+2020-11-25 11:31:38.399  WARN 5256 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 260, SQLState: HY000
+2020-11-25 11:31:38.399 ERROR 5256 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SAP DBTech JDBC: [260]: invalid column name: SALESORDER0_.CREATIONDATE: line 1 col 84 (at pos 83)
+2020-11-25 11:31:38.408  INFO 5256 --- [           main] o.h.e.internal.DefaultLoadEventListener  : HHH000327: Error performing load command
+
+org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.hibernate.dialect.AbstractHANADialect$3.convert(AbstractHANADialect.java:982) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:186) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:151) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.prepareQueryStatement(AbstractLoadPlanBasedLoader.java:198) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeQueryStatement(AbstractLoadPlanBasedLoader.java:162) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:104) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.load(AbstractLoadPlanBasedEntityLoader.java:262) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.doLoad(AbstractEntityPersister.java:4394) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:4384) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:569) [hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:537) [hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:208) [hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:332) [hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:108) [hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74) [hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:113) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1186) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1175) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.internal.SessionImpl.access$2100(SessionImpl.java:193) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.doLoad(SessionImpl.java:2786) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.lambda$load$1(SessionImpl.java:2767) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.perform(SessionImpl.java:2723) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2767) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3322) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3289) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311) ~[spring-orm-5.3.1.jar:5.3.1]
+	at com.sun.proxy.$Proxy98.find(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:282) ~[spring-data-jpa-2.4.1.jar:2.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.4.1.jar:2.4.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.4.1.jar:2.4.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.4.1.jar:2.4.1]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:524) ~[spring-data-commons-2.4.1.jar:2.4.1]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-2.4.1.jar:2.4.1]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:531) ~[spring-data-commons-2.4.1.jar:2.4.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:156) ~[spring-data-commons-2.4.1.jar:2.4.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:131) ~[spring-data-commons-2.4.1.jar:2.4.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.4.1.jar:2.4.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.4.1.jar:2.4.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.1.jar:5.3.1]
+	at com.sun.proxy.$Proxy117.findById(Unknown Source) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208) ~[spring-aop-5.3.1.jar:5.3.1]
+	at com.sun.proxy.$Proxy80.findById(Unknown Source) ~[na:na]
+	at com.accenture.training.service.SalesOrderService.findOne(SalesOrderService.java:61) ~[classes/:na]
+	at com.accenture.training.controller.SalesOrderController.FindOne(SalesOrderController.java:34) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:77) ~[spring-test-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:183) ~[spring-test-5.3.1.jar:5.3.1]
+	at com.accenture.training.controller.SalesOrderControllerTest.ad_getOneSalesOrder(SalesOrderControllerTest.java:138) ~[test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367) ~[surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274) ~[surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161) ~[surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290) ~[surefire-booter-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242) ~[surefire-booter-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) ~[surefire-booter-2.19.1.jar:2.19.1]
+Caused by: com.sap.db.jdbc.exceptions.JDBCDriverException: SAP DBTech JDBC: [260]: invalid column name: SALESORDER0_.CREATIONDATE: line 1 col 84 (at pos 83)
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB._newInstance(SQLExceptionSapDB.java:191) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB.newInstance(SQLExceptionSapDB.java:42) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.packet.HReplyPacket._buildExceptionChain(HReplyPacket.java:977) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.packet.HReplyPacket.getSQLExceptionChain(HReplyPacket.java:158) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.packet.HPartInfo.getSQLExceptionChain(HPartInfo.java:40) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.ConnectionSapDB._receive(ConnectionSapDB.java:3115) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.ConnectionSapDB.exchange(ConnectionSapDB.java:1518) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.PreparedStatementSapDB._prepare(PreparedStatementSapDB.java:2747) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.PreparedStatementSapDB._doParse(PreparedStatementSapDB.java:2667) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.PreparedStatementSapDB.<init>(PreparedStatementSapDB.java:119) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.HanaPreparedStatement.<init>(HanaPreparedStatement.java:40) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.HanaPreparedStatementFinalize.<init>(HanaPreparedStatementFinalize.java:37) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.HanaPreparedStatementFinalize.newInstance(HanaPreparedStatementFinalize.java:23) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.ConnectionSapDB._prepareStatement(ConnectionSapDB.java:2007) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.ConnectionSapDB.prepareStatement(ConnectionSapDB.java:254) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:149) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	... 123 common frames omitted
+
+]]></system-out>
+  </testcase>
+  <testcase name="az_deleteSalesOrder" classname="com.accenture.training.controller.SalesOrderControllerTest" time="0.458">
+    <error message="Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select salesorder0_.&quot;ID&quot; as id1_3_0_, salesorder0_.&quot;CREATEDBY&quot; as createdby2_3_0_, salesorder0_.&quot;CREATIONDATE&quot; as creationdate3_3_0_, salesorder0_.&quot;STATUS&quot; as status4_3_0_ from &quot;TRAINING_SALESORDER_TBLSALESORDER&quot; salesorder0_ where salesorder0_.&quot;ID&quot;=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement" type="org.springframework.web.util.NestedServletException">org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select salesorder0_."ID" as id1_3_0_, salesorder0_."CREATEDBY" as createdby2_3_0_, salesorder0_."CREATIONDATE" as creationdate3_3_0_, salesorder0_."STATUS" as status4_3_0_ from "TRAINING_SALESORDER_TBLSALESORDER" salesorder0_ where salesorder0_."ID"=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.az_deleteSalesOrder(SalesOrderControllerTest.java:155)
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select salesorder0_."ID" as id1_3_0_, salesorder0_."CREATEDBY" as createdby2_3_0_, salesorder0_."CREATIONDATE" as creationdate3_3_0_, salesorder0_."STATUS" as status4_3_0_ from "TRAINING_SALESORDER_TBLSALESORDER" salesorder0_ where salesorder0_."ID"=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.az_deleteSalesOrder(SalesOrderControllerTest.java:155)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.accenture.training.controller.SalesOrderControllerTest.az_deleteSalesOrder(SalesOrderControllerTest.java:155)
+Caused by: com.sap.db.jdbc.exceptions.JDBCDriverException: SAP DBTech JDBC: [260]: invalid column name: SALESORDER0_.CREATIONDATE: line 1 col 84 (at pos 83)
+	at com.accenture.training.controller.SalesOrderControllerTest.az_deleteSalesOrder(SalesOrderControllerTest.java:155)
+</error>
+    <system-out><![CDATA[2020-11-25 11:31:38.567 TRACE 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.a.t.c.SalesOrderController:
+	{GET [/SalesOrder]}: findAll(String,boolean)
+	{DELETE [/SalesOrder/{salesOrderId}]}: deleteProduct(String)
+	{GET [/SalesOrder/{salesOrderId}]}: FindOne(String)
+	{PUT [/SalesOrder/{salesOrderId}]}: updateProduct(String,SalesOrderTO)
+	{POST [/SalesOrder]}: createProduct(SalesOrderTO)
+2020-11-25 11:31:38.568 DEBUG 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in <unknown>
+2020-11-25 11:31:38.573 DEBUG 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-11-25 11:31:38.575 DEBUG 5256 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-11-25 11:31:38.575  INFO 5256 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-11-25 11:31:38.575  INFO 5256 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-11-25 11:31:38.575  INFO 5256 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2020-11-25 11:31:38.576 TRACE 5256 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.accenture.training.controller.SalesOrderController#deleteProduct(String)
+2020-11-25 11:31:38.577 TRACE 5256 --- [           main] o.s.web.method.HandlerMethod             : Arguments: [null]
+2020-11-25 11:31:38.629  WARN 5256 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 260, SQLState: HY000
+2020-11-25 11:31:38.629 ERROR 5256 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SAP DBTech JDBC: [260]: invalid column name: SALESORDER0_.CREATIONDATE: line 1 col 84 (at pos 83)
+2020-11-25 11:31:38.631  INFO 5256 --- [           main] o.h.e.internal.DefaultLoadEventListener  : HHH000327: Error performing load command
+
+org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.hibernate.dialect.AbstractHANADialect$3.convert(AbstractHANADialect.java:982) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:186) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:151) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.prepareQueryStatement(AbstractLoadPlanBasedLoader.java:198) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeQueryStatement(AbstractLoadPlanBasedLoader.java:162) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:104) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.load(AbstractLoadPlanBasedEntityLoader.java:262) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.doLoad(AbstractEntityPersister.java:4394) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:4384) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:569) [hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:537) [hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:208) [hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:332) [hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:108) [hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74) [hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:113) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1186) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1175) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.internal.SessionImpl.access$2100(SessionImpl.java:193) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.doLoad(SessionImpl.java:2786) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.lambda$load$1(SessionImpl.java:2767) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.perform(SessionImpl.java:2723) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2767) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3322) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3289) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311) ~[spring-orm-5.3.1.jar:5.3.1]
+	at com.sun.proxy.$Proxy98.find(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:282) ~[spring-data-jpa-2.4.1.jar:2.4.1]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteById(SimpleJpaRepository.java:175) ~[spring-data-jpa-2.4.1.jar:2.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.4.1.jar:2.4.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.4.1.jar:2.4.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.4.1.jar:2.4.1]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:524) ~[spring-data-commons-2.4.1.jar:2.4.1]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-2.4.1.jar:2.4.1]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:531) ~[spring-data-commons-2.4.1.jar:2.4.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:156) ~[spring-data-commons-2.4.1.jar:2.4.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:131) ~[spring-data-commons-2.4.1.jar:2.4.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.4.1.jar:2.4.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.4.1.jar:2.4.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.1.jar:5.3.1]
+	at com.sun.proxy.$Proxy117.deleteById(Unknown Source) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208) ~[spring-aop-5.3.1.jar:5.3.1]
+	at com.sun.proxy.$Proxy80.deleteById(Unknown Source) ~[na:na]
+	at com.accenture.training.service.SalesOrderService.delete(SalesOrderService.java:55) ~[classes/:na]
+	at com.accenture.training.controller.SalesOrderController.deleteProduct(SalesOrderController.java:54) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:77) ~[spring-test-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:183) ~[spring-test-5.3.1.jar:5.3.1]
+	at com.accenture.training.controller.SalesOrderControllerTest.az_deleteSalesOrder(SalesOrderControllerTest.java:155) ~[test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.3.1.jar:5.3.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367) ~[surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274) ~[surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161) ~[surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290) ~[surefire-booter-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242) ~[surefire-booter-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) ~[surefire-booter-2.19.1.jar:2.19.1]
+Caused by: com.sap.db.jdbc.exceptions.JDBCDriverException: SAP DBTech JDBC: [260]: invalid column name: SALESORDER0_.CREATIONDATE: line 1 col 84 (at pos 83)
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB._newInstance(SQLExceptionSapDB.java:191) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB.newInstance(SQLExceptionSapDB.java:42) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.packet.HReplyPacket._buildExceptionChain(HReplyPacket.java:977) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.packet.HReplyPacket.getSQLExceptionChain(HReplyPacket.java:158) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.packet.HPartInfo.getSQLExceptionChain(HPartInfo.java:40) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.ConnectionSapDB._receive(ConnectionSapDB.java:3115) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.ConnectionSapDB.exchange(ConnectionSapDB.java:1518) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.PreparedStatementSapDB._prepare(PreparedStatementSapDB.java:2747) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.PreparedStatementSapDB._doParse(PreparedStatementSapDB.java:2667) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.PreparedStatementSapDB.<init>(PreparedStatementSapDB.java:119) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.HanaPreparedStatement.<init>(HanaPreparedStatement.java:40) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.HanaPreparedStatementFinalize.<init>(HanaPreparedStatementFinalize.java:37) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.HanaPreparedStatementFinalize.newInstance(HanaPreparedStatementFinalize.java:23) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.ConnectionSapDB._prepareStatement(ConnectionSapDB.java:2007) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.sap.db.jdbc.ConnectionSapDB.prepareStatement(ConnectionSapDB.java:254) ~[ngdbc-2.3.48.jar:2.3.48-9bf9583a293e9fb8015c75991bf33038ae4f6bab]
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:149) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	... 124 common frames omitted
+
+]]></system-out>
+  </testcase>
+</testsuite>
